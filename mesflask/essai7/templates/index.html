@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire Complet</title>
+    <!-- Inclure la feuille de style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Indiquer votre nom, votre prénom et votre préférence</h1>
+    <form action="/page2" method="POST">
+        <p><label>Nom</label> : <input type="text" name="Nom"></p>
+        <p><label>Prénom</label> : <input type="text" name="Prénom"></p>
+        <p>Acceptez-vous les conditions ?
+            <label><input type="radio" name="accepte" value="oui"> Oui</label>
+            <label><input type="radio" name="accepte" value="non"> Non</label>
+            <label><input type="radio" name="accepte" value="je ne sais pas"> Je ne sais pas</label>
+        </p>
+        <p><input value="Valider" type="submit"></p>
+    </form>
+</body>
+</html>
