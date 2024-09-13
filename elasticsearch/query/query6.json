@@ -1,0 +1,10 @@
+{"aggs" : {
+    "group_year" : {
+        "terms" : {
+            "field" : "fields.year",
+            "order" : { "note_moyenne" : "desc" }
+        },
+        "aggs" : {
+            "note_moyenne" : {"avg" : {"field" : "fields.rating"}}
+        }
+}}}

@@ -1,0 +1,11 @@
+{"aggs" : {
+    "group_actors" : {
+        "terms" : {
+            "field" : "fields.actors.raw"
+        },
+        "aggs" : {
+            "note_moyenne" : {"avg" : {"field" : "fields.rating"}},
+            "rang_min" : {"min" : {"field" : "fields.rank"}},
+            "rang_max" : {"max" : {"field" : "fields.rank"}}
+        }
+}}}

@@ -1,0 +1,9 @@
+{
+    "query":{
+        "match":{
+            "fields.title":"X-men"
+        }
+    }
+}
+
+docker cp "C:/Users/Utilisateur/Desktop/Elastic/movies.json" elastcisearch:/usr/share/elasticsearch/movies.json

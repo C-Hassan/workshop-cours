@@ -1,0 +1,9 @@
+
+{"query":{
+    "bool": {
+        "should": { "match": { "fields.title": "Star Wars" }},
+        "must" :  { "match": { "fields.directors": "George Lucas" }}
+        }
+    }
+}
+

@@ -1,0 +1,1 @@
+curl -X PUT "http://localhost:9200/_ingest/pipeline/my-pipeline?pretty" -H "Content-Type: application/json" -d "{ \"description\": \"Adds a timestamp to documents\", \"processors\": [ { \"set\": { \"field\": \"timestamp\", \"value\": \"{{_ingest.timestamp}}\" } } ] }"

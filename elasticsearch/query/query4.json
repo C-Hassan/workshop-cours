@@ -1,0 +1,7 @@
+{"query":{
+    "bool": {
+            "should": [
+                { "match": { "fields.directors": "James Cameron" }},
+                { "range": { "fields.rank": {"lt":1000 }}}
+           ]
+}}}
